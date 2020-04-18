@@ -48,7 +48,7 @@
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">made by MCU</p>
+            <p class="masthead-subheading font-weight-light mb-0">made by Arduino Uno R3</p>
         </div>
     </header>
     <!-- about Section-->
