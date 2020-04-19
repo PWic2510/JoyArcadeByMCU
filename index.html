@@ -56,15 +56,21 @@
         <div class="container">
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">about</h2><br>
-            &emsp;&emsp;ในปัจจุบันนี้ ราคา Arcade Joystick มีราคาค่อนข้างสูง พวกเราเล็งเห็นปัญหา ของราคา Arcade Joystick ที่แพงไป เราจึงต้องการที่จะ สร้าง Arcade Joystick ขึ้นมาใช้งานเอง 
-            เนื่องจาก การสร้าง Arcade Joystickขึ้นมานั้น ราคาที่ใช้ สร้างขึ้นมา ราคาค่อนข้างถูกกว่าราคาของ Arcade Joystick จริงค่อนข้างสูง จึงก่อให้เกิด โปรเจค Handmade Arcade Joystick ขึ้นมา 
-            เพื่อตอบสนองความต้องการของผู้ที่ต้องการใช้ Arcade Joystick ที่ราคาถูก และ ไม่เน้นเริ่อง รูปลักษณ์ภายนอก โดย Handmade Arcade Joystick นี้ สามารถทำงานแทนที่ Arcade Joystick โดยการ ต่อ Arduino board
-            เข้ากับ  อุปกรณ์ต่อพ่วง ของ Arcade Joystick เพื่อรับส่งข้อมูลเข้ากับ อุปกรณ์ ที่ต้องการ เข้ากับ Handmade Arcade Joystick เราจึงเล็งเห็นความสำคัญนี้ เพื่อ สร้างความสนุกกับคนที่ไม่อยากซื้ออุปกรณ์การเล่นเกมแบบแพงๆ
+            &emsp;&emsp;ในปัจจุบันนี้ ราคา Arcade Joystick มีราคาค่อนข้างสูง พวกเราเล็งเห็นปัญหา ของราคา Arcade Joystick
+            ที่แพงไป เราจึงต้องการที่จะ สร้าง Arcade Joystick ขึ้นมาใช้งานเอง
+            เนื่องจาก การสร้าง Arcade Joystickขึ้นมานั้น ราคาที่ใช้ สร้างขึ้นมา ราคาค่อนข้างถูกกว่าราคาของ Arcade
+            Joystick จริงค่อนข้างสูง จึงก่อให้เกิด โปรเจค Handmade Arcade Joystick ขึ้นมา
+            เพื่อตอบสนองความต้องการของผู้ที่ต้องการใช้ Arcade Joystick ที่ราคาถูก และ ไม่เน้นเริ่อง รูปลักษณ์ภายนอก โดย
+            Handmade Arcade Joystick นี้ สามารถทำงานแทนที่ Arcade Joystick โดยการ ต่อ Arduino board
+            เข้ากับ อุปกรณ์ต่อพ่วง ของ Arcade Joystick เพื่อรับส่งข้อมูลเข้ากับ อุปกรณ์ ที่ต้องการ เข้ากับ Handmade
+            Arcade Joystick เราจึงเล็งเห็นความสำคัญนี้ เพื่อ สร้างความสนุกกับคนที่ไม่อยากซื้ออุปกรณ์การเล่นเกมแบบแพงๆ
         </div><br>
-            <p align="center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/-Xq4LYj85U0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </p>
-          <br>
+        <p align="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Xq4LYj85U0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </p>
+        <br>
     </section>
     <!-- source code Section-->
     <section class="page-section bg-primary text-white mb-0" id="about">
@@ -73,7 +79,8 @@
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Source code</h2><br>
             <div class="container">
                 <div class="row">
-                    <div class="col-12" style="background-color: #b3ffe6; color: black; font-family: kanit; border-radius: 3em;">
+                    <div class="col-12"
+                        style="background-color: #b3ffe6; color: black; font-family: kanit; border-radius: 3em;">
                         <br>
                         <p> #include "UnoJoy.h"<br>
                             <br>
@@ -92,61 +99,65 @@
                             int RightPin = 4;<br>
                             int DownPin = 3;<br>
                             <br>
-                            int StartPin =  12;<br>
+                            int StartPin = 12;<br>
                             <br>
                             void setup(){<div style="padding-left: 2em;">
-                              setupPins();<br>
-                              setupUnoJoy();<br></div>
+                                setupPins();<br>
+                                setupUnoJoy();<br></div>
                             }
                             <br>
                             void loop(){<div style="padding-left: 2em;">
-                              // สำหรับรับข้อมูลใหม่เรื่อยๆ<br>
-                              dataForController_t controllerData = getControllerData();<br>
-                              setControllerData(controllerData);</div></p>
-                            }
-                            <br>
-                            void setupPins(void){<div style="padding-left: 2em;">
-                              // set pin ทุกตัวที่ต้องใช้<br>
-                              for (int i = 2; i <= 13; i++){<div style="padding-left: 2em;">
+                                // สำหรับรับข้อมูลใหม่เรื่อยๆ<br>
+                                dataForController_t controllerData = getControllerData();<br>
+                                setControllerData(controllerData);</div>
+                        </p>
+                        }
+                        <br>
+                        void setupPins(void){<div style="padding-left: 2em;">
+                            // set pin ทุกตัวที่ต้องใช้<br>
+                            for (int i = 2; i <= 13; i++){<div style="padding-left: 2em;">
                                 pinMode(i, INPUT);<br>
                                 digitalWrite(i, HIGH);<br></div>
-                              }</div>
-                            }<br>
-                            <br>
-                            dataForController_t getControllerData(void){<div style="padding-left: 2em;">
-                              
-                              // set ค่าเริ่มต้นสำหรับรับค่า<br>
-                              dataForController_t controllerData = getBlankDataForController();<br>
-                              // ค่าเริ่มต้นของปุ่มเมื่อไม่ได้กดจะมีค่า เป็น HIGH ดังนั้นเราต้องกลับค่าที่เมื่อกด จาก LOW เป็น HIGH<br>
-                              controllerData.selectOn = !digitalRead(selectPin);<br>
-                              controllerData.l2On = !digitalRead(r2Pin);<br>
-                              controllerData.r2On = !digitalRead(r1Pin);<br>
-                              controllerData.triangleOn = !digitalRead(TrianglePin);<br>
-                              controllerData.circleOn = !digitalRead(CirclePin);<br>
-                              controllerData.squareOn = !digitalRead(SquarePin);<br>
-                              controllerData.crossOn = !digitalRead(CrossPin);<br>
-                              controllerData.dpadUpOn = !digitalRead(UpPin);<br>
-                              controllerData.dpadDownOn = !digitalRead(DownPin);<br>
-                              controllerData.dpadLeftOn = !digitalRead(LeftPin);<br>
-                              controllerData.dpadRightOn = !digitalRead(RightPin);<br>
-                              
-                              controllerData.startOn = !digitalRead(StartPin);<br>
-                              <br>
-                              // return ข้อมูลทั้งหมด<br>
-                              return controllerData;<br>
-                            </div>
-                            }<br>
-                            
-                            </p>
+                        }
                     </div>
+                    }<br>
+                    <br>
+                    dataForController_t getControllerData(void){<div style="padding-left: 2em;">
+
+                        // set ค่าเริ่มต้นสำหรับรับค่า<br>
+                        dataForController_t controllerData = getBlankDataForController();<br>
+                        // ค่าเริ่มต้นของปุ่มเมื่อไม่ได้กดจะมีค่า เป็น HIGH ดังนั้นเราต้องกลับค่าที่เมื่อกด จาก LOW เป็น
+                        HIGH<br>
+                        controllerData.selectOn = !digitalRead(selectPin);<br>
+                        controllerData.l2On = !digitalRead(r2Pin);<br>
+                        controllerData.r2On = !digitalRead(r1Pin);<br>
+                        controllerData.triangleOn = !digitalRead(TrianglePin);<br>
+                        controllerData.circleOn = !digitalRead(CirclePin);<br>
+                        controllerData.squareOn = !digitalRead(SquarePin);<br>
+                        controllerData.crossOn = !digitalRead(CrossPin);<br>
+                        controllerData.dpadUpOn = !digitalRead(UpPin);<br>
+                        controllerData.dpadDownOn = !digitalRead(DownPin);<br>
+                        controllerData.dpadLeftOn = !digitalRead(LeftPin);<br>
+                        controllerData.dpadRightOn = !digitalRead(RightPin);<br>
+
+                        controllerData.startOn = !digitalRead(StartPin);<br>
+                        <br>
+                        // return ข้อมูลทั้งหมด<br>
+                        return controllerData;<br>
+                    </div>
+                    }<br>
+
+                    </p>
                 </div>
             </div>
+        </div>
 
 
-            <div class="text-center mt-4">
-                <a class="btn btn-xl btn-outline-light" href="https://github.com/PWic2510/JoyArcadeByUNOR3/tree/master/sketch_apr18a"><i
-                        class="fas fa-download mr-2"></i> Download!</a>
-            </div>
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light"
+                href="https://github.com/PWic2510/JoyArcadeByUNOR3/tree/master/sketch_apr18a"><i
+                    class="fas fa-download mr-2"></i> Download!</a>
+        </div>
         </div>
     </section>
     <!-- member Section-->
@@ -156,17 +167,15 @@
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">member</h2><br>
             <div id="member" class="row">
                 <div class="col-6">
-                    <img width="220" height="180" src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t1.0-9/p960x960/59821709_2176320345780225_4813226963655196672_o.jpg?_nc_cat=103&_nc_sid=7aed08&_nc_eui2=AeFKlwKle4Ip3Gi9O7JBzzbRJrWGnJ1H2o0mtYacnUfajREPbMRwypqh9eIvHBFG8MJMG5eVe9QEitPlJO17C-IZ&_nc_ohc=P5JKnT1b6UsAX9pYyjc&_nc_ht=scontent.fbkk22-3.fna&_nc_tp=6&oh=fc86c90e825cf7116ace5411560de156&oe=5EBF605D"
+                    <img width="260" height="180"
+                        src="https://lh3.google.com/u/1/d/1bQVhJpcJ27LO2iMnfynPbbIQ2UKI2oxx=w1920-h882-iv1"
                         alt="" /><!-- Masthead Heading-->
                     <h3>ปฐมพงษ์ วิมลเจริญ 62070111</h3>
                     <div class=" mb-3 ">
 
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://web.facebook.com/PW1025"><i
+                        <a class="btn btn-outline-dark btn-social mx-1" href="https://web.facebook.com/PW1025" target="_blank"><i
                                 class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-twitter"></i></a><a
-                            class="btn btn-outline-dark btn-social mx-1" href="#"><i
-                                class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-dribbble"></i></a>
+                            href=https://github.com/PWic2510#" target="_blank"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
                 <div class="col-6">
@@ -176,43 +185,36 @@
                     <h3>ณัฐวัฒน์ ชวนิช 62070066</h3>
                     <div class=" mb-3 ">
 
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://web.facebook.com/profile.php?id=100003386253790"><i
+                        <a class="btn btn-outline-dark btn-social mx-1"
+                            href="https://web.facebook.com/profile.php?id=100003386253790" target="_blank"><i
                                 class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-twitter"></i></a><a
-                            class="btn btn-outline-dark btn-social mx-1" href="#"><i
-                                class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-dribbble"></i></a>
+                            href="https://github.com/guyNattawat" target="_blank"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <img width="260" height="180" class="img-fluid"
-                        src="https://lh3.google.com/u/0/d/1Vo0QBki0nPWjxY8yLneMAWfbBbElfsdq=w1920-h942-iv1"
-                        alt="" /><!-- Masthead Heading-->
+                        src="https://lh3.google.com/u/0/d/1Vo0QBki0nPWjxY8yLneMAWfbBbElfsdq=w1920-h942-iv1" alt="" />
+                    <!-- Masthead Heading-->
                     <h3>บดี จักรธีรังกูร 62070107</h3>
                     <div class=" mb-5 ">
 
-                        <a class="btn btn-outline-dark btn-social mx-1" href="https://web.facebook.com/Bordee.Jakteerangkul"><i
+                        <a class="btn btn-outline-dark btn-social mx-1"
+                            href="https://web.facebook.com/Bordee.Jakteerangkul" target="_blank"><i
                                 class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-twitter"></i></a><a
-                            class="btn btn-outline-dark btn-social mx-1" href="#"><i
-                                class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-dribbble"></i></a>
+                            href="https://github.com/Bordee2000" target="_blank"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
                 <div class="col-6">
                     <img width="260" height="180" class="img-fluid"
-                        src="https://storage.thaipost.net/main/uploads/photos/big/20190412/image_big_5caff2dcf29fe.jpg"
+                        src="https://scontent.fbkk22-3.fna.fbcdn.net/v/t1.0-9/46696970_318320885428939_8227041097080111104_o.jpg?_nc_cat=111&_nc_sid=8024bb&_nc_eui2=AeH-3kPoebN_AdqXDKsCInz1PdIQJUsMwqs90hAlSwzCq_ZlI2HnBA7woB-kZjuBcghBxacit4-zLQ2R4subrSzK&_nc_ohc=R6L4NznS9qwAX-6-pfq&_nc_ht=scontent.fbkk22-3.fna&oh=eb9939ea4d327120760b0240756a4c84&oe=5EC1A014"
                         alt="" /><!-- Masthead Heading-->
-                    <h3>ประยุทธ์ จันทร์โอชา 44</h3>
+                    <h3>นพกร สุดแดง 62070100</h3>
                     <div class=" mb-5 ">
 
-                        <a class="btn btn-outline-dark btn-social mx-1" href="#"><i
+                        <a class="btn btn-outline-dark btn-social mx-1" href="https://web.facebook.com/rawit.tangwichitrerkk" target="_blank"><i
                                 class="fab fa-fw fa-facebook-f"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-twitter"></i></a><a
-                            class="btn btn-outline-dark btn-social mx-1" href="#"><i
-                                class="fab fa-fw fa-linkedin-in"></i></a><a class="btn btn-outline-dark btn-social mx-1"
-                            href="#"><i class="fab fa-fw fa-dribbble"></i></a>
+                            href="https://github.com/noppakorn-11417" target="_blank"><i class="fab fa-fw fa-github"></i></a>
                     </div>
                 </div>
 
@@ -225,8 +227,8 @@
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
                 class="fa fa-chevron-up"></i></a>
     </div>
-    
-    
+
+
     <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
