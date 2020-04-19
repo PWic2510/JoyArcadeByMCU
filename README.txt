@@ -1,5 +1,4 @@
-# JoyArcadeByUNOR3
-create joyarcade by Ardunio UNO R3
+ JoyArcade create by Ardunio UNO R3
 ขั้นตอนการติดตั้ง 
   1.upload sketch_apr18a.ino เข้าสู่ board
   2.ทำการ set pin ตามที่ต้องการ โดยใช้ 
