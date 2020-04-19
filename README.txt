@@ -6,6 +6,7 @@ create joyarcade by Ardunio UNO R3
     UnoJoyWin/UnoJoyProcessingVisualizer/UnoJoyProcessingVisualizer.exe 
   ในการดูว่าปุ่มเป็นตามที่ต้องการ
   3.ทำให้ board เป็น DFU mode โดนการเอาตัวนำไฟฟ้า หรือ สายไฟมาแตะที่ขาสองขาหน้าทางฝั่ง USB port
+  
   1                        2 ---->
            o o o           |        | o o 
    ----|   o o o           |----|   | o o
@@ -14,6 +15,7 @@ create joyarcade by Ardunio UNO R3
        |                   |    |   
    ----|                   |----|
                            |
+                           
   4.คลิก UnoJoyWin/TurnIntoAJoystick.bat เพื่อทำการ flashing 
   5.ถอดสายออกและเสียบใหม่อีกครั้ง
   6.เช็คทำงาน ของ อุปกรณ์
